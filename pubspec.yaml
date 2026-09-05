@@ -1,0 +1,52 @@
+name: weatherapp
+description: "Weather App"
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+  # State Management & Architecture
+  flutter_bloc: ^8.1.4
+  get_it: ^7.6.7
+  equatable: ^2.0.5
+  dartz: ^0.10.1
+
+  # Networking & API
+  dio: ^5.4.1
+
+  # Location Services
+  geolocator: ^11.0.0
+
+  # Local Storage & Caching
+  shared_preferences: ^2.2.2
+  cached_network_image: ^3.3.1
+  geocoding: ^3.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+
+  # مسار مجلد الصور والأيقونات (تأكد من إنشاء المجلد ووضع اللوجو فيه)
+  # assets:
+  #   - assets/images/
+
+# إعدادات أداة توليد الأيقونات
+flutter_launcher_icons:
+  image_path: "assets/images/logo.png"
+  android: true
+  ios: true
